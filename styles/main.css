@@ -13,11 +13,22 @@ body{
     max-width: 1600px;
     height: 100vh;
     margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
     font-size: 30px;
     display: grid;
     grid-template-columns: auto 600px;
     grid-template-areas: 
         "main menu"
+}
+
+a, a:visited{
+    color: inherit;
+    transition: opacity 0.15s ease;
+}
+
+a:hover{
+    opacity: 0.5;
 }
 
 main{
@@ -39,6 +50,32 @@ nav{
     width: 300px;
     border-radius: 50%;
     box-shadow: 0 30px 30px -5px rgba(0,0,0,0.2) ;
+}
+
+#menu{
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 60px;
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu li{
+    margin-bottom: 0.33em;
+}
+
+#menu .current{
+    text-decoration: underline;
+}
+
+#menu li:last-child{
+    font-size: 0.66em;
+}
+
+i{
+    margin-right: 16px;
 }
 
 #about{
