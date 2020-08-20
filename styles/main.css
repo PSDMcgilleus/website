@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'StreetWear';
+    src: url(../fonts/Streetwear.otf);
+  }
+
+  @font-face {
+    font-family: 'Berlin';
+    src: url(../fonts/Berlin.ttf);
+  }
+
+body{
+    font-family: Berlin, sans-serif;
+    max-width: 1600px;
+    height: 100vh;
+    margin: auto;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: auto 600px;
+    grid-template-areas: 
+        "main menu"
+}
+
+main{
+    grid-area: main;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center; /* works for homepage, may break for longer content */
+    flex-wrap: wrap;
+}
+
+nav{
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 30px 30px -5px rgba(0,0,0,0.2) ;
+}
+
+#about{
+    text-align: right;
+    max-width: 66%;
+    margin-right: 60px;
+    margin-left: auto;
+/*     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; */
+}
