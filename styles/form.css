@@ -1,0 +1,64 @@
+form{
+    width: 90%;
+}
+
+form p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding-left: 16px;
+    border-radius: 10px;
+    font-family: inherit;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    font-size: inherit;
+}
+
+input, select{
+    height: 48px;
+    display: block;
+    margin-top: 5px;
+}
+
+textarea{
+    padding: 16px;
+}
+
+fieldset{
+    padding: 0;
+    border: none;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+fieldset p{
+    /* display: inline-block; */
+    margin-right: 30px;
+    width: 45%;
+}
+
+button{
+    font-size: inherit;
+    font-family: Streetwear, Berlin, sans-serif;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-top: 8px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.1s ease;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #ED1B2F;
+}
+
+button:active{
+    background-color: #D00000;
+}
