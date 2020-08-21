@@ -16,15 +16,49 @@
         <li><a href="#">Portfolio</a></li>
         <li class="current">Submit a project</li>
         <li>
-          <a href="https://www.instagram.com/psd_mcgill/"><i class="fa fa-instagram fa-2x"></i></a>
-          <a href="https://www.facebook.com/psdeus"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/psd_mcgill/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/psdeus" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
           <a href="mailto:psd@mcgilleus.ca"><i class="fa fa-envelope fa-2x"></i></li></a>
       </ul>
     </nav>
     <main>
-      <form netlify>
-        <input type="text" />
-        <input type="submit" value="Submit" />
+      <p>In need of our services? Fill out the form below! We'll get back to you as soon as we can. Note that we are unlikely to take on your project without sufficient lead time (2 weeks). In the event that your project isn't picked up by one of our designers within two weeks, we'll let you know that we unfortunately cannot help you.</p>
+      <form name="request" method="POST" netlify>
+        <p>
+          <label for="formName">Contact Full Name</label>
+          <input type="text" id="formName" name="fullname" placeholder="Marty the Martlet" required />
+        </p>
+        <p>
+          <label for="formGroup">EUS Group Affiliation</label>
+          <input type="text" id="formGroup" name="affiliation" placeholder="Martlet Appreciation Committee" required />
+        </p>
+        <p>
+          <label for="formEmail">Contact Email</label>
+          <input type="email" id="formEmail" name="email" placeholder="marty@mcgilleus.ca" required />
+        </p>
+        <fieldset>
+          <p>
+            <label for="formDeadline">Deadline (Tentative)</label>
+            <input type="date" name="deadline" id="formDeadline" required />
+          </p>
+          <p>
+            <label for="formType">Project Type</label>
+            <select name="project" id="formType" required>
+              <option selected>Logo</option>
+              <option>Banner</option>
+              <option>Apparel</option>
+              <option>Sticker/Patch</option>
+              <option>Sponsorship Package</option>
+              <option>Poster</option>
+              <option>Other</option>
+            </select>
+          </p>
+        </fieldset>
+        <p style="margin-bottom: 5px;">
+          <label for="formDesc">Description</label>
+          <textarea name="description" id="formDesc" rows=5 required placeholder="Give us some context, details and desires, and introduce your group!"></textarea>
+        </p>
+        <button type="submit">Submit</button>
       </form>
     </main>
   </body>
