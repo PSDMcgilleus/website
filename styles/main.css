@@ -83,7 +83,32 @@ i{
 
 #about{
     text-align: right;
-    max-width: 80%;
+    /* max-width: 80%; */
     margin-right: 0;
     margin-left: auto;
+}
+
+@media screen and (max-width: 1200px), screen and (orientation: portrait){
+    body{
+        grid-template-columns: auto;
+        grid-template-rows: 25vh auto;
+        grid-template-areas: 
+            "menu"
+            "main";
+        row-gap: 60px;
+    }
+
+    nav{
+        justify-content: space-evenly;
+        padding-top: 60px;
+    }
+
+    main{
+        padding-right: 0;
+    }
+
+    #logo{
+        height: 22.5vh;
+        width: auto;
+    }
 }
