@@ -35,12 +35,17 @@ main{
     grid-area: main;
     overflow-y: scroll;
     scrollbar-width: none;
+    -ms-overflow-style: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding-right: 60px;
     padding-bottom: 60px;
     padding-top: 60px;
+}
+
+main::-webkit-scrollbar{
+    display: none;
 }
 
 nav{
