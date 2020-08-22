@@ -111,4 +111,8 @@ i{
         height: 22.5vh;
         width: auto;
     }
+
+    #about{
+        text-align: center;
+    }
 }
